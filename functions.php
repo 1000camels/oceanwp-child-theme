@@ -28,3 +28,22 @@ function oceanwp_child_enqueue_parent_style() {
 	
 }
 add_action( 'wp_enqueue_scripts', 'oceanwp_child_enqueue_parent_style' );
+
+
+/** 
+ * Replace the default color palettes in the color picker
+ */
+function my_custom_color_palettes( $palettes ) {
+    $palettes = array(
+        '#34ade2',
+        '#625528',
+        '#b28238',
+        '#2a282b',
+        '#000000',
+        '#ffffff',
+        '#cccccc',
+    );
+
+    return $palettes;
+}
+add_filter( 'ocean_default_color_palettes', 'my_custom_color_palettes' );
