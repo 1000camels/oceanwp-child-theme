@@ -1,11 +1,256 @@
 /*
-Theme Name: OceanWP Child
-Theme URI: https://oceanwp.org/
-Description: OceanWP WordPress theme example child theme.
-Author: Nick
-Author URI: https://oceanwp.org/
+Theme Name: Justice Centre Hong Kong Theme
+Theme URI: https://www.justicecentre.org.hk/
+Description: This is a child theme of OceanWP, developed and customised for the Justice Centre Hong Kong.
+Author: Darcy Christ <darcy@aporia.info>
+Author URI: https://aporia.info
 Template: oceanwp
 Version: 1.0
 */
 
 /* Parent stylesheet should be loaded from functions.php not using @import */
+
+
+
+/**
+ 
+ red: #920000;
+ dark red: #760000
+ dark grey: #3e3e3e rgb(62, 62, 62)
+ darker grey: #333333 rgb(51, 51, 51)
+ light grey: #eaeff2 rgb(234, 239, 242);
+
+ */
+
+
+ /*R E G U L A R  T W E A K S */
+/*@font-face {
+  font-family: NewsCycle-Regular;
+  src:local("NewsCycle-Regular"),
+  url(/framework/themes/css/fonts/jchk-fonts/NewsCycle-Regular.ttf),
+  url(/framework/themes/css/fonts/jchk-fonts/newscycle-regular-webfont.eot),
+  url(/framework/themes/css/fonts/jchk-fonts/newscycle-regular-webfont.svg),
+  url(/framework/themes/css/fonts/jchk-fonts/newscycle-regular-webfont.woff);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: OpenSans-CondBold;
+  src:local("OpenSans-CondBold"),
+  url(/framework/themes/css/fonts/jchk-fonts/OpenSans-CondBold.ttf),
+  url(/framework/themes/css/fonts/jchk-fonts/opensans-condbold-webfont.eot),
+  url(/framework/themes/css/fonts/jchk-fonts/opensans-condbold-webfont.svg),
+  url(/framework/themes/css/fonts/jchk-fonts/opensans-condbold-webfont.woff);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: OpenSans-CondLight;
+  src:local("OpenSans-CondLight"),
+  url(/framework/themes/css/fonts/jchk-fonts/OpenSans-CondLight.ttf),
+  url(/framework/themes/css/fonts/jchk-fonts/opensans-condlight-webfont.eot),
+  url(/framework/themes/css/fonts/jchk-fonts/opensans-condlight-webfont.svg),
+  url(/framework/themes/css/fonts/jchk-fonts/opensans-condlight-webfont.woff);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Default-Helvetica;
+  src:local("Default-Helvetica"),
+  url(/framework/themes/css/fonts/jchk-fonts/Helvetica.dfont);
+  font-weight: normal;
+}*/
+
+
+#content-wrap {
+	position: relative;
+}
+#right-sidebar {
+	width: 26%;
+	position: absolute;
+	top: -88px;
+	bottom: 0;
+	left: 74%;
+	padding: 10px 10px 10px;
+}
+#right-sidebar h4.widget-title {
+	font-family: "Open Sans Condensed", Sans-serif;
+    text-transform: uppercase;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 800;
+    line-height: 18px;
+    letter-spacing: 0px;
+}
+#right-sidebar a {
+    display: block;
+	font-family: "Open Sans Condensed", Sans-serif;
+	background: #920000;
+    color: #fff;
+    padding: 20px 10px;
+    font-size: 18px;
+    font-weight: lighter;
+    line-height: 20px;
+    border-bottom: 1px solid #670001;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in;
+    -o-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+}    
+#right-sidebar li:hover a {
+	background: #760000;
+	font-weight: 700;
+	-webkit-box-shadow: inset 0px 0px 9px 3px rgba(31, 99, 81, 0.2);
+    box-shadow: inset 0px 0px 9px 3px rgba(31, 99, 81, 0.2);
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -ms-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+}
+
+h3 {
+    margin: 35px 0 15px 0;
+}
+
+table td {
+	border-bottom: none;
+	padding: 0px;
+}
+
+p, hr, ul, ol, dl, blockquote, pre, fieldset, figure {
+    margin: 15px 0;
+}
+ul, ol, dl {
+    padding-left: 30px;
+}
+
+form input[type="text"], form input[type="password"], form input[type="email"], form input[type="url"], form input[type="date"], form input[type="month"], form input[type="time"], form input[type="datetime"], form input[type="datetime-local"], form input[type="week"], form input[type="number"], form input[type="search"], form input[type="tel"], form input[type="color"], form select, form textarea {
+	min-height: auto; 
+}
+
+input[type="submit"] {
+	background-color: #111;
+    color: #eee;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    border: none;
+    text-shadow: 1px 1px 1px #3e3e3e;
+    font-family: "OpenSans-CondLight";
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+}
+input[type="submit"]:hover {
+    background: #eee;
+    color: #333;
+    text-shadow: none;
+    text-decoration: none;
+}
+
+
+body.single-report:not(.elementor-page) #content {
+	padding: 20px 0;
+}
+
+
+
+
+
+
+
+
+
+/*.elementor-nav-menu--main .menu-item:hover {
+	background-color: #ddd;
+}
+.elementor-nav-menu--main .menu-item:hover .elementor-item {
+	color: #777 !important;
+}*/
+
+.menu-item-6749 {
+	/*background-color: #920000;*/
+	text-decoration: underline;
+}
+.menu-item-6749 .elementor-item {
+	color: #fff !important;
+}
+
+.royalSlider {
+	margin-top: -10px;
+	/*margin-bottom: -2px;*/
+}
+.visibleNearbyZoom {
+ 	padding: 0 !important;
+}
+
+.widget-title {
+    border: none;
+    padding: 0;
+}
+
+
+#right-sidebar-inner .widget-title {
+	font-size: 28px;
+}
+
+#right-sidebar-inner {
+	color: #fff;
+}
+
+
+/* Responsive Styles Tablet And Below */
+
+/* styles for narrow desktop browsers and iPad landscape */
+@media all and (max-width: 1024px) {
+
+	.no-mobile-dropdown.elementor-nav-menu--dropdown-tablet .elementor-nav-menu--main {
+		display: block;
+	}
+
+	.no-mobile-dropdown.elementor-nav-menu--dropdown-tablet .elementor-menu-toggle, .no-mobile-dropdown.elementor-nav-menu--dropdown-tablet .elementor-nav-menu--dropdown {
+		display: none;
+	}
+
+}
+
+
+/* styles for narrower desktop browsers and iPad portrait */
+@media all and (max-width: 980px) {
+
+}
+
+
+/* styles for mobile */
+@media all and (max-width: 767px) {
+
+	#right-sidebar {
+		width: 100%;
+		position: static;
+		top: 0px;
+		bottom: 0;
+		left: 0;
+		padding: 10px;
+	}
+
+	.content-area {
+		margin-bottom: 0px;
+	}
+
+	.no-mobile-dropdown.elementor-nav-menu--dropdown-mobile .elementor-nav-menu--main {
+		display: block;
+	}
+
+	.no-mobile-dropdown.elementor-nav-menu--dropdown-mobile .elementor-menu-toggle, .no-mobile-dropdown.elementor-nav-menu--dropdown-mobile .elementor-nav-menu--dropdown {
+		display: none;
+	}
+
+}
+
+
+/* styles for older mobiles */
+@media screen and (max-width:479px) {
+
+}
